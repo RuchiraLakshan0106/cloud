@@ -16,10 +16,10 @@ jobs:
         uses: docker/setup-buildx-action@v2
 
       - name: 🏗️ Build Docker containers
-        run: docker-compose build
+        run: docker compose -f microservices/docker-compose.yml build
 
       - name: ▶️ Run containers
-        run: docker-compose up -d
+        run: docker compose -f microservices/docker-compose.yml up -d
 
       - name: 🧪 Check running containers
         run: docker ps

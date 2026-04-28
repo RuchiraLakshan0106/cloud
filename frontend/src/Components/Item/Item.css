@@ -1,0 +1,82 @@
+.item {
+  width: 350px;
+}
+
+.item p {
+  margin: 6px 0px;
+}
+.item-prices {
+  display: flex;
+  gap: 20px;
+}
+.item-price-new {
+  color: #374151;
+  font-size: 18x;
+  font-weight: 600;
+}
+.item-price-old {
+  color: #8c8c8c;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+.item:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+}
+.image{
+  height: 418px;
+  width: 350px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .item {
+    width: 300px; /* Adjust for medium screens */
+  }
+
+  .image {
+    height: 360px; /* Adjust image height for medium screens */
+    width: 300px; /* Match the item width */
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    width: 250px; /* Adjust for smaller screens */
+  }
+
+  .image {
+    height: 300px; /* Adjust image height for smaller screens */
+    width: 250px; /* Match the item width */
+  }
+
+  .item-prices {
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .item-price-new,
+  .item-price-old {
+    font-size: 16px; /* Smaller font size for better fit */
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: 100%; /* Full width for mobile screens */
+  }
+
+  .image {
+    height: 240px; /* Maintain aspect ratio */
+    width: 180px; /* Full width for mobile screens */
+  }
+
+  .item-prices {
+    gap: 5px; /* Minimal gap for compact layout */
+  }
+
+  .item-price-new,
+  .item-price-old {
+    font-size: 14px; /* Smaller font sizes for mobile */
+  }
+}

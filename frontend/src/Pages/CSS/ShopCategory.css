@@ -1,0 +1,134 @@
+.shopcategory-banner {
+  display: block;
+  margin: 30px auto;
+  width: 80%;
+}
+.shopcategory-indexSort {
+  display: flex;
+  margin: 0px 170px;
+  justify-content: space-between;
+  align-items: center;
+}
+.shopcategory-sort {
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #888;
+}
+.shopcategory-indexSort p span {
+  font-weight: 600;
+}
+.shopcategory-products {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 80px;
+}
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background: #ededed;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Original CSS retained */
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .shopcategory-banner {
+    width: 90%; /* Adjust banner width */
+    margin: 20px auto; /* Reduce margin */
+  }
+
+  .shopcategory-indexSort {
+    margin: 0px 100px; /* Reduce side margin */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Add spacing between items */
+  }
+
+  .shopcategory-sort {
+    padding: 8px 16px; /* Adjust padding */
+    font-size: 14px; /* Smaller text size */
+  }
+
+  .shopcategory-products {
+    grid-template-columns: 1fr 1fr 1fr; /* Reduce columns */
+    margin: 20px; /* Adjust margins */
+    row-gap: 60px; /* Reduce row gap */
+  }
+
+  .shopcategory-loadmore {
+    width: 200px; /* Adjust button size */
+    height: 60px; /* Adjust height */
+    font-size: 16px; /* Smaller text */
+  }
+}
+
+@media (max-width: 768px) {
+  .shopcategory-banner {
+    width: 95%; /* Make banner wider for smaller screens */
+    margin: 15px auto; /* Reduce margin */
+  }
+
+  .shopcategory-indexSort {
+    margin: 0px 50px; /* Further reduce side margin */
+    gap: 15px; /* Adjust spacing */
+  }
+
+  .shopcategory-sort {
+    padding: 6px 12px; /* Smaller padding */
+    font-size: 12px; /* Adjust text size */
+  }
+
+  .shopcategory-products {
+    grid-template-columns: 1fr 1fr; /* Reduce columns for smaller screens */
+    margin: 10px; /* Reduce margins */
+    row-gap: 40px; /* Reduce row gap */
+  }
+
+  .shopcategory-loadmore {
+    width: 180px; /* Compact button */
+    height: 55px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shopcategory-banner {
+    width: 100%; /* Full width for mobile */
+    margin: 10px auto; /* Minimal margin */
+  }
+
+  .shopcategory-indexSort {
+    margin: 0 20px; /* Compact margin */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 10px;
+  }
+
+  .shopcategory-sort {
+    width: 100%; /* Full width for better usability */
+    text-align: center;
+  }
+
+  .shopcategory-products {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    margin: 5px; /* Minimal margin */
+    row-gap: 30px; /* Compact row gap */
+  }
+
+  .shopcategory-loadmore {
+    width: 150px; /* Smaller button */
+    height: 50px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,92 @@
+.relatedproducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+  margin-bottom: 100px;
+}
+.relatedproducts h1 {
+  color: black;
+  font-size: 50px;
+  font-weight: 500;
+}
+.relatedproducts hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+.relatedproducts-item {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+/* Original CSS retained */
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .relatedproducts {
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 50px; /* Reduce bottom margin */
+    gap: 20px; /* Increase spacing */
+  }
+
+  .relatedproducts h1 {
+    font-size: 40px; /* Adjust heading size */
+  }
+
+  .relatedproducts hr {
+    width: 150px; /* Reduce width of the horizontal line */
+    height: 4px; /* Adjust thickness */
+  }
+
+  .relatedproducts-item {
+    gap: 20px; /* Reduce gap between items */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items */
+  }
+}
+
+@media (max-width: 768px) {
+  .relatedproducts {
+    gap: 15px; /* Compact spacing */
+  }
+
+  .relatedproducts h1 {
+    font-size: 30px; /* Smaller heading */
+  }
+
+  .relatedproducts hr {
+    width: 120px; /* Narrower line */
+    height: 3px; /* Thinner line */
+  }
+
+  .relatedproducts-item {
+    gap: 15px; /* Smaller gap */
+    flex-wrap: wrap; /* Ensure items wrap */
+    justify-content: center; /* Center items */
+  }
+}
+
+@media (max-width: 480px) {
+  .relatedproducts {
+    margin-bottom: 30px; /* Compact bottom margin */
+  }
+
+  .relatedproducts h1 {
+    font-size: 24px; /* Smaller heading size */
+  }
+
+  .relatedproducts hr {
+    width: 100px; /* Compact width */
+    height: 2px; /* Thinner line */
+  }
+
+  .relatedproducts-item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    gap: 10px; /* Smaller gap */
+  }
+}

@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+  api-gateway:
+    build: ./api-gateway
+    command: node index.js
+    env_file:
+      - ./api-gateway/.env
+    ports:
+      - "4000:4000"
+    depends_on:
+      - auth-service
+      - product-service
+      - cart-service
+      - upload-service
+
+  auth-service:
+    build: ./services/auth-service
+    command: node index.js
+    env_file:
+      - ./services/auth-service/.env
+    ports:
+      - "4001:4001"
+
+  product-service:
+    build: ./services/product-service
+    command: node index.js
+    env_file:
+      - ./services/product-service/.env
+    ports:
+      - "4002:4002"
+
+  cart-service:
+    build: ./services/cart-service
+    command: node index.js
+    env_file:
+      - ./services/cart-service/.env
+    ports:
+      - "4003:4003"
+
+  upload-service:
+    build: ./services/upload-service
+    command: node index.js
+    env_file:
+      - ./services/upload-service/.env
+    ports:
+      - "4004:4004"

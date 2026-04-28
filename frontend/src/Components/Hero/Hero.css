@@ -1,0 +1,109 @@
+.hero {
+  height: 100vh;
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Ensures proper alignment on smaller screens */
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px; /* Adjusts padding for smaller screens */
+  line-height: 1.1;
+  text-align: center; /* Centers text content for smaller screens */
+}
+
+.hero-left h2 {
+  color: #090909;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.hero-left p {
+  color: #171717;
+  font-size: 50px; /* Adjusted for smaller screens */
+  font-weight: 700;
+}
+
+.hero-hand-icon {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-hand-icon img {
+  width: 80px; /* Smaller size for responsiveness */
+}
+
+.hero-latest-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 260px; /* Adjusted width for smaller screens */
+  height: 60px;
+  border-radius: 75px;
+  margin: 20px auto 0; /* Centers button and adjusts margin */
+  background-color: #ff4141;
+  color: white;
+  font-size: 18px; /* Adjusted font size */
+  font-weight: 500;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adjust spacing for smaller screens */
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 400px; /* Restricts image size for smaller screens */
+}
+
+@media (min-width: 768px) {
+  .hero-left {
+    padding-left: 100px;
+    text-align: left; /* Reverts text alignment for medium screens */
+  }
+
+  .hero-left h2 {
+    font-size: 26px;
+  }
+
+  .hero-left p {
+    font-size: 70px; /* Larger font size for medium screens */
+  }
+
+  .hero-latest-btn {
+    width: 280px;
+    height: 65px;
+  }
+
+  .hero-right img {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    flex-wrap: nowrap; /* Restores original layout for larger screens */
+  }
+
+  .hero-left {
+    padding-left: 180px;
+  }
+
+  .hero-left p {
+    font-size: 80px; /* Largest font size for larger screens */
+  }
+
+  .hero-right img {
+    max-width: 540px;
+  }
+}

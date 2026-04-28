@@ -1,0 +1,138 @@
+.offers {
+  width: 60%;
+  height: 500px;
+  display: flex;
+  margin: 100px auto;
+  padding: 0px 140px;
+  margin-bottom: 150px;
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  border-radius: 20px; /* Optional for a more polished look */
+}
+
+/* Left Section */
+.offers-left {
+  flex: 1;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offers-left h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+.bg-img{
+  height: 500px;
+  margin-bottom: 50px;
+}
+.offers-left p {
+  color: #171717;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.offers-left button {
+  width: 282px;
+  height: 70px;
+  border-radius: 35px;
+  background: #ff4141;
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+/* Right Section */
+.offers-right {
+  flex: 1;
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+  justify-content: flex-end;
+  padding-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .offers {
+    width: 80%;
+    height: auto; /* Allow height to adjust based on content */
+    padding: 0px 80px; /* Reduce padding for tablets */
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center align */
+  }
+
+  .offers-left {
+    align-items: center; /* Center align text */
+    text-align: center;
+  }
+
+  .offers-left h1 {
+    font-size: 40px; /* Reduce font size for tablets */
+  }
+
+  .offers-left p {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .offers-left button {
+    width: 250px; /* Adjust button size */
+    height: 60px;
+    font-size: 18px; /* Adjust font size for button text */
+  }
+
+  .offers-right {
+    justify-content: center; /* Center the content */
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offers {
+    width: 90%; /* Use more available space on smaller screens */
+    padding: 20px; /* Add some padding */
+  }
+
+  .offers-left h1 {
+    font-size: 32px; /* Further reduce font size */
+  }
+
+  .offers-left p {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .offers-left button {
+    width: 220px; /* Smaller button for mobile */
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .offers-right {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .offers {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+    padding: 10px;
+  }
+
+  .offers-left h1 {
+    font-size: 28px; /* Adjust for small screens */
+  }
+
+  .offers-left p {
+    font-size: 14px; /* Smaller text */
+  }
+
+  .offers-left button {
+    width: 200px; /* Smallest button size */
+    height: 45px;
+    font-size: 14px;
+  }
+}

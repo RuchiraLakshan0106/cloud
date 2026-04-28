@@ -1,0 +1,159 @@
+.newsletter {
+  width: 60%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0px 140px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  gap: 30px;
+  border-radius: 20px; /* Optional for a polished look */
+}
+
+.newsletter h1 {
+  color: #454545;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.newsletter p {
+  color: #454545;
+  font-size: 20px;
+}
+
+.newsletter div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 730px;
+  height: 70px;
+  border-radius: 80px;
+  border: 1px solid #e3e3e3;
+  padding: 0 10px;
+}
+
+.newsletter input {
+  width: 500px;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  color: #616161;
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+.newsletter div button {
+  width: 210px;
+  height: 70px;
+  border-radius: 80px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .newsletter {
+    width: 80%; /* Adjust width for tablets */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .newsletter h1 {
+    font-size: 40px; /* Reduce font size */
+  }
+
+  .newsletter p {
+    font-size: 18px;
+  }
+
+  .newsletter div {
+    width: 600px; /* Adjust input container width */
+    height: 60px; /* Reduce height */
+  }
+
+  .newsletter input {
+    width: 400px; /* Adjust input width */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .newsletter div button {
+    width: 180px; /* Adjust button width */
+    height: 60px; /* Reduce button height */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    width: 90%; /* Use more available space */
+    height: auto; /* Allow height to adjust */
+    padding: 15px; /* Reduce padding */
+    gap: 20px; /* Reduce gap */
+  }
+
+  .newsletter h1 {
+    font-size: 32px; /* Smaller font for mobile */
+  }
+
+  .newsletter p {
+    font-size: 16px;
+  }
+
+  .newsletter div {
+    width: 100%; /* Full-width container */
+    height: 55px;
+    flex-direction: column; /* Stack input and button */
+    gap: 10px;
+  }
+
+  .newsletter input {
+    width: 90%; /* Full width for input */
+    margin: 0; /* Center the input */
+    padding: 10px; /* Add padding for comfort */
+  }
+
+  .newsletter div button {
+    width: 90%; /* Full width for button */
+    height: 55px;
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter {
+    width: 100%; /* Full width */
+    padding: 10px;
+  }
+
+  .newsletter h1 {
+    font-size: 28px; /* Smaller font for small screens */
+  }
+
+  .newsletter p {
+    font-size: 14px;
+  }
+
+  .newsletter div {
+    width: 100%; /* Full width container */
+    height: auto; /* Adjust height based on content */
+    gap: 10px; /* Add spacing between elements */
+  }
+
+  .newsletter input {
+    width: 90%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .newsletter div button {
+    width: 90%;
+    height: 45px;
+    font-size: 12px;
+  }
+}

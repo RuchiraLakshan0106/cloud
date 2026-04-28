@@ -1,0 +1,90 @@
+.collections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+}
+.collections h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+.collections hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+.collections-Item {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+/* Original CSS retained */
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .collections {
+    height: auto; /* Adjust height dynamically */
+    gap: 20px; /* Increase spacing for better visuals */
+  }
+
+  .collections h1 {
+    font-size: 40px; /* Adjust heading size */
+  }
+
+  .collections hr {
+    width: 150px; /* Reduce width of the line */
+    height: 4px; /* Adjust thickness */
+  }
+
+  .collections-Item {
+    gap: 20px; /* Reduce gap between items */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center-align the items */
+  }
+}
+
+@media (max-width: 768px) {
+  .collections {
+    gap: 15px; /* Compact spacing */
+  }
+
+  .collections h1 {
+    font-size: 30px; /* Smaller heading */
+  }
+
+  .collections hr {
+    width: 120px; /* Narrower line */
+    height: 3px; /* Thinner line */
+  }
+
+  .collections-Item {
+    gap: 15px; /* Smaller gap */
+    flex-wrap: wrap; /* Ensure items wrap */
+    justify-content: center; /* Center-align the items */
+  }
+}
+
+@media (max-width: 480px) {
+  .collections {
+    gap: 10px; /* Compact spacing */
+  }
+
+  .collections h1 {
+    font-size: 24px; /* Smaller heading */
+  }
+
+  .collections hr {
+    width: 100px; /* Compact width */
+    height: 2px; /* Thinner line */
+  }
+
+  .collections-Item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items */
+    gap: 10px; /* Smaller gap */
+  }
+}

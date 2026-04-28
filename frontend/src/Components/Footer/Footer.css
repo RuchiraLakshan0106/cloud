@@ -1,0 +1,143 @@
+.footer {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  color: #252525;
+  font-size: 20px;
+}
+.footer-links li {
+  cursor: pointer;
+}
+.footer-social-icon {
+  display: flex;
+  gap: 20px;
+}
+.footer-icons-container {
+  padding: 10px;
+  padding-bottom: 6px;
+  background: #fbfbfb;
+  border: 1px solid #ebebeb;
+}
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  font-size: 20px;
+}
+.footer-copyright hr {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  height: 3px;
+  background: #c7c7c7;
+}
+
+/* Original CSS retained */
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .footer {
+    gap: 30px; /* Reduce gap for medium screens */
+  }
+
+  .footer-logo p {
+    font-size: 36px; /* Adjust font size for smaller screens */
+  }
+
+  .footer-links {
+    gap: 30px; /* Reduce gap between links */
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .footer-social-icon {
+    gap: 15px; /* Reduce gap between social icons */
+  }
+
+  .footer-copyright {
+    font-size: 18px; /* Smaller text size */
+    gap: 20px; /* Reduce spacing between elements */
+  }
+
+  .footer-copyright hr {
+    width: 90%; /* Slightly wider for better fit */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    gap: 20px; /* Further reduce gap for smaller screens */
+  }
+
+  .footer-logo {
+    flex-direction: column; /* Stack logo and text */
+    gap: 10px; /* Reduce spacing */
+  }
+
+  .footer-logo p {
+    font-size: 28px; /* Smaller font size for smaller screens */
+    text-align: center; /* Center align text */
+  }
+
+  .footer-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 15px; /* Reduce gap */
+    font-size: 16px; /* Smaller font size */
+  }
+
+  .footer-social-icon {
+    gap: 10px; /* Reduce gap between social icons */
+  }
+
+  .footer-copyright {
+    font-size: 16px; /* Adjust for smaller screens */
+  }
+
+  .footer-copyright hr {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    gap: 15px; /* Compact layout */
+  }
+
+  .footer-logo p {
+    font-size: 24px; /* Smaller font size for mobile screens */
+  }
+
+  .footer-links {
+    gap: 10px; /* Minimal gap */
+    font-size: 14px; /* Smaller text size */
+  }
+
+  .footer-social-icon {
+    gap: 8px; /* Compact spacing */
+  }
+
+  .footer-icons-container {
+    padding: 8px; /* Reduce padding */
+  }
+
+  .footer-copyright {
+    font-size: 14px; /* Smaller font size for mobile */
+    gap: 15px; /* Compact spacing */
+  }
+
+  .footer-copyright hr {
+    width: 100%; /* Full width */
+  }
+}
